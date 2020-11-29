@@ -7,8 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-          sh 'terraform init'
-          sh 'terraform apply -auto-approve'
+          sh './build-and-launch.sh'
          }
       }
    }
