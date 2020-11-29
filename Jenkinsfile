@@ -7,7 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-          sh './build-and-launch.sh'
+          sh 'build-and-launch.sh'
          }
       }
    }
