@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: no
+  roles:
+    - app_build
+    - grafana_test
+
+
+
+
