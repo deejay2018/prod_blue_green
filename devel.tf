@@ -51,7 +51,7 @@ resource "aws_instance" "proxy" {
 
 resource "aws_instance" "appserver-1" {
 
-  ami                         = "ami-0bb3fad3c0286ebd5"  #Packer AMI
+  ami                         = var.AMI_ID  #Packer AMI
   instance_type               = "t2.micro"
   key_name                     = aws_key_pair.prometheus_key_pair.key_name
   subnet_id                   = aws_subnet.private-subnet-1.id
@@ -73,7 +73,7 @@ resource "aws_instance" "appserver-1" {
 resource "aws_instance" "appserver-2" {
 
 
-  ami                         = "ami-0bb3fad3c0286ebd5"  #packer AMI
+  ami                         = var.AMI_ID #packer AMI
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.prometheus_key_pair.key_name
   subnet_id                   = aws_subnet.private-subnet-2.id
