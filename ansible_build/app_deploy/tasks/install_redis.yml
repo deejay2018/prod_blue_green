@@ -1,0 +1,9 @@
+- name: Start node_exporter container
+  docker_container:
+    name: redis
+    image: redis
+    source: pull
+    shell: docker run -d -p 6379:6379   -e REDIS_PASSWORD=redis --name redis redis /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
+
+
+

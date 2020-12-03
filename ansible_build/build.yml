@@ -1,10 +1,16 @@
 ---
-- hosts: localhost
-  gather_facts: no
+-
+  gather_facts: false
+  hosts: monitor
   roles:
     - app_build
-    - grafana_test
-
-
-
-
+-
+  gather_facts: false
+  hosts: blue_green
+  roles:
+    - app_deploy
+-
+  gather_facts: false
+  hosts: monitor
+  roles:
+    - app_deploy

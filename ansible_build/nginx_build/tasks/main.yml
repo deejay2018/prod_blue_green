@@ -2,7 +2,7 @@
   -
     name: create build directory
     file:
-      path: /tmp/demo-dockerfile
+      path: /tmp/demo-nginx
       state: directory
       owner: root
       group: root
@@ -11,24 +11,24 @@
   -
     name: copy Dockerfile
     copy:
-      src: ./voting_app/
-      dest: /tmp/demo-dockerfile
+      src: ./
+      dest: /tmp/demo-nginx
       owner: root
       group: root
       mode: '0644'
 
   - name: build container image
     docker_image:
-      name: democontainer:v1.0
+      name: nginx:v1.0
       build:
-        path: /tmp/demo-dockerfile
+        path: /tmp/demo-nginx
       source: build
       state: present
 
   - name: archive container image as a tarball
     docker_image:
       name: democontainer:v1.0
-      archive_path: /tmp/democontainer_v1_0.tar
+      archive_path: /tmp/nginx_v1_0.tar
       timeout: 120
       source: pull
       state: present
