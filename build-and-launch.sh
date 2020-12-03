@@ -1,6 +1,11 @@
 #!/bin/bash
-ARTIFACT=`packer build -machine-readable packer-example.json |awk -F, '$0 ~/artifact,0,id/ {print $6}'`
-AMI_ID=`echo $ARTIFACT | cut -d ':' -f2`
+
+# Packer log settings
+export PACKER_LOG=1
+export PACKER_LOG_PATH="packerlog.txt"
+echo $PACKER_LOG
+echo $PACKER_LOG_PATH
+AMI_IDa=`packer build -machine-readable new.json | tee build.log `
+AMI_ID=`grep 'artifact,0,id' build.log | cut -d, -f6 | cut -d: -f2`
 echo 'variable "AMI_ID" { default = "'${AMI_ID}'" }' > amivar.tf
-terraform init
-terraform -auto-approve
+terraform apply -auto-approve
