@@ -1,39 +1,34 @@
 ---
-  -
-    name: create build directory
+  - name: Nginx create build directory
     file:
-      path: /tmp/demo-nginx
+      path: /tmp/demonginx
       state: directory
       owner: root
       group: root
       mode: '0755'
 
-  -
-    name: copy Dockerfile
+  - name: Nginx copy Dockerfile
     copy:
-      src: ./
-      dest: /tmp/demo-nginx
+      src: ./nginx_app/
+      dest: /tmp/demonginx/
       owner: root
       group: root
       mode: '0644'
 
-  - name: build container image
+
+  - name: Nginx build container image
     docker_image:
       name: nginx:v1.0
       build:
-        path: /tmp/demo-nginx
+        path: /tmp/demonginx
       source: build
+      pull: yes
       state: present
 
-  - name: archive container image as a tarball
+  - name: Nginx archive container image as a tarball
     docker_image:
-      name: democontainer:v1.0
+      name: nginx:v1.0
       archive_path: /tmp/nginx_v1_0.tar
-      timeout: 120
       source: pull
       state: present
-
-
-
-
 

@@ -1,0 +1,15 @@
+---
+  - name: Voteapp copy tarball to host
+    copy:
+      src: /tmp/voteapp_v1_0.tar
+      dest: /tmp/voteapp_v1_0.tar
+
+  - name: Voteapp load container from tarball
+    docker_image:
+      name: blue
+      load_path: /tmp/voteapp_v1_0.tar
+      timeout: 120
+      state: present
+      source: load
+
+

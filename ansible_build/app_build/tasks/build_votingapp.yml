@@ -1,0 +1,35 @@
+---
+    - name: Voteapp create build directory
+      file:
+        path: /tmp/dockervoteapp
+        state: directory
+        owner: root
+        group: root
+        mode: '0755'
+
+    - name: Voteapp copy Dockerfile
+      copy:
+        src: ./voting_app/
+        dest: /tmp/dockervoteapp/
+        owner: root
+        group: root
+        mode: '0644'
+
+
+    - name: Voteapp build container image
+      docker_image:
+        name: voteapp:v1.0
+        build:
+          path: /tmp/dockervoteapp
+        source: build
+        pull: yes
+        state: present
+
+    - name: Voteapp archive container image as a tarball
+      docker_image:
+        name: voteapp:v1.0
+        archive_path: /tmp/voteapp_v1_0.tar
+        timeout: 300
+        source: pull
+        state: present
+

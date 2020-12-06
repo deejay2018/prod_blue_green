@@ -1,16 +1,16 @@
 ---
--
+
+- hosts:  all
   gather_facts: false
+  become: yes
+
+- name: Deploy VoteApp
   hosts: monitor
   roles:
     - app_build
--
-  gather_facts: false
-  hosts: blue_green
+    - grafana_test
+
+- name: Deploy Nginx
+  hosts: proxy
   roles:
-    - app_deploy
--
-  gather_facts: false
-  hosts: monitor
-  roles:
-    - app_deploy
+    - deploy
