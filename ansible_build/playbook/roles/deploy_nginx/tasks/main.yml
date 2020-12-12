@@ -1,0 +1,7 @@
+---
+# tasks file for Deploy Voting App and Nginx
+
+- include_tasks: deploy_nginx.yml
+  tags:
+    - "proxy"
+

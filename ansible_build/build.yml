@@ -1,16 +1,30 @@
 ---
 
 - hosts:  all
-  gather_facts: false
+  gather_facts: no
   become: yes
+  vars:
+    ansible_user: ec2-user
+    ansible_ssh_private_key_file: /Users/terraform/pometheus_key.pem
 
 - name: Deploy VoteApp
-  hosts: monitor
+  hosts: localhost
+  vars:
+    - ansible_host: "{{ public_ip_address }}"
   roles:
     - app_build
     - grafana_test
 
+- name: Deploy VoteApp 
+  hosts: blue_green
+  vars:
+    - ansible_host: "{{ public_ip_address }}"
+  roles:
+    - deploy_votingapp
+
+
 - name: Deploy Nginx
   hosts: proxy
+  - ansible_host: "{{ public_ip_address }}"
   roles:
-    - deploy
+    - deploy_nginx

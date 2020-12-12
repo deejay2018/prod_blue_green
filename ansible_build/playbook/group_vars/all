@@ -1,0 +1,8 @@
+#all:
+#  hosts:
+#    map_blue_server:
+#      ansible_connection: ssh
+#      ansible_user: ubuntu # Remote user
+#      ansible_host: 34.244.201.97 # Remote host
+#      ansible_port: 22
+

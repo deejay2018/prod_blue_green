@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Download') {
+            steps {
+                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/deejay2018/prod_blue_green.git'
+            }
+        }
+
+        stage('apply') {
+          environment {
+            AWS_ACCESS_KEY_ID = credentials('ACCESS_KEY')
+            AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
+        }
+       steps {
+           sh '''whoami
+chmod 775 build-and-launch.sh
+./build-and-launch.sh'''
+
+         }
+      }
+
+    }
+}

@@ -29,7 +29,7 @@
       docker_image:
         name: voteapp:v1.0
         archive_path: /tmp/voteapp_v1_0.tar
-        timeout: 300
+        timeout: 60
         source: pull
         state: present
 

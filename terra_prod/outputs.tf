@@ -2,7 +2,7 @@
 resource "local_file" "inventory" {
  filename = "./ansible_build/hosts.ini"
  content = <<EOF
-[monitor]
+[localhost]
 ${aws_instance.toolbox.public_ip}
 
 [proxy]
