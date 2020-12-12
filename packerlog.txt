@@ -1,0 +1,868 @@
+2020/12/12 16:18:15 [INFO] Packer version: 1.6.4 [go1.15.2 windows amd64]
+2020/12/12 16:18:15 Checking 'PACKER_CONFIG' for a config file path
+2020/12/12 16:18:15 'PACKER_CONFIG' not set; checking the default config file path
+2020/12/12 16:18:15 Attempting to open config file: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:15 [WARN] Config file doesn't exist: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:15 Setting cache directory: C:\Users\fikodave\PycharmProjects\sftwr\Terraform\FinalprojectTerra\FinalProject1\prod_blue_green\prod_blue_green\packer_cache
+2020/12/12 16:18:15 Creating plugin client for path: C:\Packer\packer.exe
+2020/12/12 16:18:15 Starting plugin: C:\Packer\packer.exe []string{"C:\\Packer\\packer.exe", "plugin", "packer-builder-amazon-ebs"}
+2020/12/12 16:18:15 Waiting for RPC address for: C:\Packer\packer.exe
+2020/12/12 16:18:17 packer.exe plugin: [INFO] Packer version: 1.6.4 [go1.15.2 windows amd64]
+2020/12/12 16:18:17 packer.exe plugin: Checking 'PACKER_CONFIG' for a config file path
+2020/12/12 16:18:17 packer.exe plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2020/12/12 16:18:17 packer.exe plugin: Attempting to open config file: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:17 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:17 packer.exe plugin: Setting cache directory: C:\Users\fikodave\PycharmProjects\sftwr\Terraform\FinalprojectTerra\FinalProject1\prod_blue_green\prod_blue_green\packer_cache
+2020/12/12 16:18:17 packer.exe plugin: args: []string{"packer-builder-amazon-ebs"}
+2020/12/12 16:18:17 packer.exe plugin: Plugin port range: [10000,25000]
+2020/12/12 16:18:17 Received tcp RPC address for C:\Packer\packer.exe: addr is 127.0.0.1:10000
+2020/12/12 16:18:17 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2020/12/12 16:18:17 packer.exe plugin: Waiting for connection...
+2020/12/12 16:18:17 packer.exe plugin: Serving a plugin connection...
+2020/12/12 16:18:17 Creating plugin client for path: C:\Packer\packer.exe
+2020/12/12 16:18:17 Starting plugin: C:\Packer\packer.exe []string{"C:\\Packer\\packer.exe", "plugin", "packer-provisioner-shell"}
+2020/12/12 16:18:17 Waiting for RPC address for: C:\Packer\packer.exe
+2020/12/12 16:18:17 packer.exe plugin: [INFO] Packer version: 1.6.4 [go1.15.2 windows amd64]
+2020/12/12 16:18:17 packer.exe plugin: Checking 'PACKER_CONFIG' for a config file path
+2020/12/12 16:18:17 packer.exe plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2020/12/12 16:18:17 packer.exe plugin: Attempting to open config file: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:17 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\fikodave\AppData\Roaming\packer.config
+2020/12/12 16:18:17 packer.exe plugin: Setting cache directory: C:\Users\fikodave\PycharmProjects\sftwr\Terraform\FinalprojectTerra\FinalProject1\prod_blue_green\prod_blue_green\packer_cache
+2020/12/12 16:18:17 packer.exe plugin: args: []string{"packer-provisioner-shell"}
+2020/12/12 16:18:17 packer.exe plugin: Plugin port range: [10000,25000]
+2020/12/12 16:18:17 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2020/12/12 16:18:17 Received tcp RPC address for C:\Packer\packer.exe: addr is 127.0.0.1:10000
+2020/12/12 16:18:17 packer.exe plugin: Waiting for connection...
+2020/12/12 16:18:17 packer.exe plugin: Serving a plugin connection...
+2020/12/12 16:18:17 Preparing build: amazon-ebs
+2020/12/12 16:18:17 packer.exe plugin: [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2020/12/12 16:18:17 Build debug mode: false
+2020/12/12 16:18:17 Force build: false
+2020/12/12 16:18:17 On error: 
+2020/12/12 16:18:17 Waiting on builds to complete...
+2020/12/12 16:18:17 Starting build run: amazon-ebs
+2020/12/12 16:18:17 Running builder: amazon-ebs
+2020/12/12 16:18:17 [INFO] (telemetry) Starting builder amazon-ebs
+2020/12/12 16:18:17 packer.exe plugin: [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2020/12/12 16:18:17 packer.exe plugin: Found region eu-west-1
+2020/12/12 16:18:17 packer.exe plugin: [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2020/12/12 16:18:18 1607789898,,ui,say,==> amazon-ebs: Prevalidating any provided VPC information
+2020/12/12 16:18:18 1607789898,,ui,say,==> amazon-ebs: Prevalidating AMI Name: packer_app 1607789896
+2020/12/12 16:18:19 packer.exe plugin: Using AMI Filters {
+2020/12/12 16:18:19 packer.exe plugin:   ImageIds: ["ami-0bb3fad3c0286ebd5"]
+2020/12/12 16:18:19 packer.exe plugin: }
+2020/12/12 16:18:19 1607789899,,ui,message,    amazon-ebs: Found Image ID: ami-0bb3fad3c0286ebd5
+2020/12/12 16:18:19 1607789899,,ui,say,==> amazon-ebs: Creating temporary keypair: packer_5fd4ed49-24bb-b8a5-ef25-dce1e99c26cc
+2020/12/12 16:18:19 1607789899,,ui,say,==> amazon-ebs: Creating temporary security group for this instance: packer_5fd4ed4b-a807-5167-7333-e8b2cb12b5af
+2020/12/12 16:18:20 packer.exe plugin: [DEBUG] Waiting for temporary security group: sg-0af970d4179a76b4c
+2020/12/12 16:18:20 packer.exe plugin: [DEBUG] Found security group sg-0af970d4179a76b4c
+2020/12/12 16:18:20 1607789900,,ui,say,==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
+2020/12/12 16:18:20 1607789900,,ui,say,==> amazon-ebs: Launching a source AWS instance...
+2020/12/12 16:18:20 1607789900,,ui,say,==> amazon-ebs: Adding tags to source instance
+2020/12/12 16:18:20 1607789900,,ui,message,    amazon-ebs: Adding tag: "Name": "Packer Builder"
+2020/12/12 16:18:22 1607789902,,ui,message,    amazon-ebs: Instance ID: i-054059a90120d16bf
+2020/12/12 16:18:22 1607789902,,ui,say,==> amazon-ebs: Waiting for instance (i-054059a90120d16bf) to become ready...
+2020/12/12 16:18:53 packer.exe plugin: [INFO] Not using winrm communicator, skipping get password...
+2020/12/12 16:18:53 1607789933,,ui,say,==> amazon-ebs: Using ssh communicator to connect: 3.248.252.107
+2020/12/12 16:18:53 packer.exe plugin: [INFO] Waiting for SSH, up to timeout: 5m0s
+2020/12/12 16:18:53 1607789933,,ui,say,==> amazon-ebs: Waiting for SSH to become available...
+2020/12/12 16:18:53 packer.exe plugin: Using host value: 3.248.252.107
+2020/12/12 16:18:57 packer.exe plugin: [DEBUG] TCP connection to SSH ip/port failed: dial tcp 3.248.252.107:22: connectex: No connection could be made because the target machine actively refused it.
+2020/12/12 16:19:02 packer.exe plugin: Using host value: 3.248.252.107
+2020/12/12 16:19:02 packer.exe plugin: [INFO] Attempting SSH connection to 3.248.252.107:22...
+2020/12/12 16:19:02 packer.exe plugin: [DEBUG] reconnecting to TCP connection for SSH
+2020/12/12 16:19:02 packer.exe plugin: [DEBUG] handshaking with SSH
+2020/12/12 16:19:04 packer.exe plugin: [DEBUG] handshake complete!
+2020/12/12 16:19:04 packer.exe plugin: [INFO] no local agent socket, will not connect agent
+2020/12/12 16:19:04 1607789944,,ui,say,==> amazon-ebs: Connected to SSH!
+2020/12/12 16:19:04 packer.exe plugin: Running the provision hook
+2020/12/12 16:19:04 [INFO] (telemetry) Starting provisioner shell
+2020/12/12 16:19:04 1607789944,,ui,say,==> amazon-ebs: Pausing 10s before the next provisioner...
+2020/12/12 16:19:14 1607789954,,ui,say,==> amazon-ebs: Provisioning with shell script: ../prod_blue_green/packer/scripts/install_req_packer.sh
+2020/12/12 16:19:14 packer.exe plugin: Opening ../prod_blue_green/packer/scripts/install_req_packer.sh for reading
+2020/12/12 16:19:14 packer.exe plugin: [INFO] 399 bytes written for 'uploadData'
+2020/12/12 16:19:14 [INFO] 399 bytes written for 'uploadData'
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Opening new ssh session
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Started SCP session, beginning transfers...
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] scp: Uploading script_2596.sh: perms=C0644 size=399
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Waiting for SSH session to complete.
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] scp stderr (length 31): Sink: C0644 399 script_2596.sh
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Opening new ssh session
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] starting remote command: chmod 0755 /tmp/script_2596.sh
+2020/12/12 16:19:14 packer.exe plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:19:14 [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:19:14 [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:19:14 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:19:14 packer.exe plugin: [DEBUG] Opening new ssh session
+2020/12/12 16:19:15 packer.exe plugin: [DEBUG] starting remote command: PACKER_BUILDER_TYPE='amazon-ebs' PACKER_BUILD_NAME='amazon-ebs'  sudo -E sh '/tmp/script_2596.sh'
+2020/12/12 16:19:16 1607789956,,ui,message,    amazon-ebs: Loaded plugins: extras_suggestions%!(PACKER_COMMA) langpacks%!(PACKER_COMMA) priorities%!(PACKER_COMMA) update-motd
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 3497.
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs:   The other application is: yum
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs:     Memory : 134 M RSS (351 MB VSZ)
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs:     Started: Sat Dec 12 16:19:10 2020 - 00:05 ago
+2020/12/12 16:19:16 1607789956,,ui,error,==> amazon-ebs:     State  : Running%!(PACKER_COMMA) pid: 3497
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: Resolving Dependencies
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: --> Running transaction check
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-linux-extras.noarch 0:1.6.12-1.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-linux-extras.noarch 0:1.6.13-1.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-linux-extras-yum-plugin.noarch 0:1.6.12-1.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-linux-extras-yum-plugin.noarch 0:1.6.13-1.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-ssm-agent.x86_64 0:2.3.1319.0-1.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package amazon-ssm-agent.x86_64 0:3.0.161.0-1.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package aws-cfn-bootstrap.noarch 0:1.4-32.amzn2.0.1 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package aws-cfn-bootstrap.noarch 0:1.4-34.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package awscli.noarch 0:1.18.107-1.amzn2.0.1 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package awscli.noarch 0:1.18.147-1.amzn2.0.1 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-33.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-34.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-export-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-export-libs.x86_64 32:9.11.4-26.P2.amzn2.2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-libs.x86_64 32:9.11.4-26.P2.amzn2.2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.11.4-26.P2.amzn2.2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-license.noarch 32:9.11.4-9.P2.amzn2.0.4 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-license.noarch 32:9.11.4-26.P2.amzn2.2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-utils.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package bind-utils.x86_64 32:9.11.4-26.P2.amzn2.2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package cpio.x86_64 0:2.11-27.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package cpio.x86_64 0:2.11-28.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-12.amzn2.0.2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-19.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-12.amzn2.0.2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-19.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-instance-connect.noarch 0:1.1-12.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-instance-connect.noarch 0:1.1-13.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-net-utils.noarch 0:1.4-2.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-net-utils.noarch 0:1.4-3.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-utils.noarch 0:1.2-1.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package ec2-utils.noarch 0:1.2-3.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package expat.x86_64 0:2.1.0-10.amzn2.0.2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package expat.x86_64 0:2.1.0-12.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package freetype.x86_64 0:2.8-14.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package freetype.x86_64 0:2.8-14.amzn2.1 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glib2.x86_64 0:2.56.1-5.amzn2.0.1 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glib2.x86_64 0:2.56.1-7.amzn2.0.1 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-all-langpacks.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-all-langpacks.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-common.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-common.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-locale-source.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-locale-source.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-minimal-langpack.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package glibc-minimal-langpack.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package hunspell.x86_64 0:1.3.2-15.amzn2.0.2 will be updated
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package hunspell.x86_64 0:1.3.2-16.amzn2 will be an update
+2020/12/12 16:19:18 1607789958,,ui,message,    amazon-ebs: ---> Package iptables.x86_64 0:1.8.2-16.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package iptables.x86_64 0:1.8.4-10.amzn2.1.2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package iptables-libs.x86_64 0:1.8.2-16.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package iptables-libs.x86_64 0:1.8.4-10.amzn2.1.2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package kernel.x86_64 0:4.14.209-160.335.amzn2 will be installed
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-12.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-19.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.11-1.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.12-6.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcrypt.x86_64 0:2.26-35.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libcrypt.x86_64 0:2.26-39.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libgcc.x86_64 0:7.3.1-9.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libgcc.x86_64 0:7.3.1-11.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libgomp.x86_64 0:7.3.1-9.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libgomp.x86_64 0:7.3.1-11.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libpng.x86_64 2:1.5.13-7.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libpng.x86_64 2:1.5.13-8.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-12.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-19.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-12.amzn2.2.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-12.amzn2.2.3 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libstdc++.x86_64 0:7.3.1-9.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libstdc++.x86_64 0:7.3.1-11.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libtiff.x86_64 0:4.0.3-32.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libtiff.x86_64 0:4.0.3-35.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libxml2.x86_64 0:2.9.1-6.amzn2.4.1 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libxml2.x86_64 0:2.9.1-6.amzn2.5.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libxml2-python.x86_64 0:2.9.1-6.amzn2.4.1 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package libxml2-python.x86_64 0:2.9.1-6.amzn2.5.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.64-1.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.68-1.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nspr.x86_64 0:4.21.0-1.amzn2.0.2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nspr.x86_64 0:4.25.0-2.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss.x86_64 0:3.44.0-7.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss.x86_64 0:3.53.1-3.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-softokn.x86_64 0:3.44.0-8.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-softokn.x86_64 0:3.53.1-6.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-softokn-freebl.x86_64 0:3.44.0-8.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-softokn-freebl.x86_64 0:3.53.1-6.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.44.0-7.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.53.1-3.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-tools.x86_64 0:3.44.0-7.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-tools.x86_64 0:3.53.1-3.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-util.x86_64 0:3.44.0-4.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package nss-util.x86_64 0:3.53.1-1.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-15.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-22.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package p11-kit.x86_64 0:0.23.19-1.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package p11-kit.x86_64 0:0.23.21-2.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package p11-kit-trust.x86_64 0:0.23.19-1.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package p11-kit-trust.x86_64 0:0.23.21-2.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package pam.x86_64 0:1.1.8-22.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package pam.x86_64 0:1.1.8-23.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python-pillow.x86_64 0:2.0.0-20.gitd1c6db8.amzn2.0.1 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python-pillow.x86_64 0:2.0.0-21.gitd1c6db8.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-botocore.noarch 0:1.17.31-1.amzn2.0.1 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-botocore.noarch 0:1.18.6-1.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-rpm.x86_64 0:4.11.3-40.amzn2.0.4 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-rpm.x86_64 0:4.11.3-40.amzn2.0.5 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-s3transfer.noarch 0:0.1.12-1.amzn2.0.1 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package python2-s3transfer.noarch 0:0.3.3-1.amzn2.0.1 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rng-tools.x86_64 0:5-13.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rng-tools.x86_64 0:6.8-3.amzn2.0.4 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-40.amzn2.0.4 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-40.amzn2.0.5 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-40.amzn2.0.4 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-40.amzn2.0.5 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-40.amzn2.0.4 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-40.amzn2.0.5 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-plugin-systemd-inhibit.x86_64 0:4.11.3-40.amzn2.0.4 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package rpm-plugin-systemd-inhibit.x86_64 0:4.11.3-40.amzn2.0.5 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package system-release.x86_64 1:2-12.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package system-release.x86_64 1:2-13.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package unzip.x86_64 0:6.0-20.amzn2 will be updated
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ---> Package unzip.x86_64 0:6.0-21.amzn2 will be an update
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: --> Finished Dependency Resolution
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Dependencies Resolved
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  Package                        Arch   Version                 Repository  Size
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Installing:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  kernel                         x86_64 4.14.209-160.335.amzn2  amzn2-core  21 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Updating:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  amazon-linux-extras            noarch 1.6.13-1.amzn2          amzn2-core  37 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  amazon-linux-extras-yum-plugin noarch 1.6.13-1.amzn2          amzn2-core  10 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  amazon-ssm-agent               x86_64 3.0.161.0-1.amzn2       amzn2-core  28 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  aws-cfn-bootstrap              noarch 1.4-34.amzn2            amzn2-core 652 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  awscli                         noarch 1.18.147-1.amzn2.0.1    amzn2-core 2.1 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bash                           x86_64 4.2.46-34.amzn2         amzn2-core 1.0 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bind-export-libs               x86_64 32:9.11.4-26.P2.amzn2.2 amzn2-core 1.1 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bind-libs                      x86_64 32:9.11.4-26.P2.amzn2.2 amzn2-core 157 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bind-libs-lite                 x86_64 32:9.11.4-26.P2.amzn2.2 amzn2-core 1.1 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bind-license                   noarch 32:9.11.4-26.P2.amzn2.2 amzn2-core  91 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  bind-utils                     x86_64 32:9.11.4-26.P2.amzn2.2 amzn2-core 259 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  cpio                           x86_64 2.11-28.amzn2           amzn2-core 211 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  e2fsprogs                      x86_64 1.42.9-19.amzn2         amzn2-core 700 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  e2fsprogs-libs                 x86_64 1.42.9-19.amzn2         amzn2-core 166 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  ec2-instance-connect           noarch 1.1-13.amzn2            amzn2-core  22 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  ec2-net-utils                  noarch 1.4-3.amzn2             amzn2-core  17 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  ec2-utils                      noarch 1.2-3.amzn2             amzn2-core  11 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  expat                          x86_64 2.1.0-12.amzn2          amzn2-core  86 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  freetype                       x86_64 2.8-14.amzn2.1          amzn2-core 373 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glib2                          x86_64 2.56.1-7.amzn2.0.1      amzn2-core 2.4 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glibc                          x86_64 2.26-39.amzn2           amzn2-core 3.3 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glibc-all-langpacks            x86_64 2.26-39.amzn2           amzn2-core 7.0 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glibc-common                   x86_64 2.26-39.amzn2           amzn2-core 769 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glibc-locale-source            x86_64 2.26-39.amzn2           amzn2-core 3.2 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  glibc-minimal-langpack         x86_64 2.26-39.amzn2           amzn2-core  28 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  hunspell                       x86_64 1.3.2-16.amzn2          amzn2-core 225 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  iptables                       x86_64 1.8.4-10.amzn2.1.2      amzn2-core 476 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  iptables-libs                  x86_64 1.8.4-10.amzn2.1.2      amzn2-core  93 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libcom_err                     x86_64 1.42.9-19.amzn2         amzn2-core  42 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libcroco                       x86_64 0.6.12-6.amzn2          amzn2-core 103 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libcrypt                       x86_64 2.26-39.amzn2           amzn2-core  49 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libgcc                         x86_64 7.3.1-11.amzn2          amzn2-core  98 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libgomp                        x86_64 7.3.1-11.amzn2          amzn2-core 204 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libpng                         x86_64 2:1.5.13-8.amzn2        amzn2-core 212 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libss                          x86_64 1.42.9-19.amzn2         amzn2-core  47 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libssh2                        x86_64 1.4.3-12.amzn2.2.3      amzn2-core 134 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libstdc++                      x86_64 7.3.1-11.amzn2          amzn2-core 445 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libtiff                        x86_64 4.0.3-35.amzn2          amzn2-core 173 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libxml2                        x86_64 2.9.1-6.amzn2.5.1       amzn2-core 661 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  libxml2-python                 x86_64 2.9.1-6.amzn2.5.1       amzn2-core 246 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  mariadb-libs                   x86_64 1:5.5.68-1.amzn2        amzn2-core 766 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nspr                           x86_64 4.25.0-2.amzn2          amzn2-core 125 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss                            x86_64 3.53.1-3.amzn2          amzn2-core 860 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss-softokn                    x86_64 3.53.1-6.amzn2          amzn2-core 352 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss-softokn-freebl             x86_64 3.53.1-6.amzn2          amzn2-core 328 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss-sysinit                    x86_64 3.53.1-3.amzn2          amzn2-core  65 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss-tools                      x86_64 3.53.1-3.amzn2          amzn2-core 530 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  nss-util                       x86_64 3.53.1-1.amzn2          amzn2-core  78 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  openldap                       x86_64 2.4.44-22.amzn2         amzn2-core 350 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  p11-kit                        x86_64 0.23.21-2.amzn2.0.1     amzn2-core 316 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  p11-kit-trust                  x86_64 0.23.21-2.amzn2.0.1     amzn2-core 128 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  pam                            x86_64 1.1.8-23.amzn2.0.1      amzn2-core 715 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  python-pillow                  x86_64 2.0.0-21.gitd1c6db8.amzn2.0.1
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:                                                                amzn2-core 440 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  python2-botocore               noarch 1.18.6-1.amzn2.0.1      amzn2-core 4.4 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  python2-rpm                    x86_64 4.11.3-40.amzn2.0.5     amzn2-core  84 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  python2-s3transfer             noarch 0.3.3-1.amzn2.0.1       amzn2-core 104 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  rng-tools                      x86_64 6.8-3.amzn2.0.4         amzn2-core  54 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  rpm                            x86_64 4.11.3-40.amzn2.0.5     amzn2-core 1.2 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  rpm-build-libs                 x86_64 4.11.3-40.amzn2.0.5     amzn2-core 106 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  rpm-libs                       x86_64 4.11.3-40.amzn2.0.5     amzn2-core 275 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  rpm-plugin-systemd-inhibit     x86_64 4.11.3-40.amzn2.0.5     amzn2-core  47 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  system-release                 x86_64 1:2-13.amzn2            amzn2-core  18 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:  unzip                          x86_64 6.0-21.amzn2            amzn2-core 172 k
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Transaction Summary
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Install   1 Package
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Upgrade  63 Packages
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Total download size: 88 M
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Downloading packages:
+2020/12/12 16:19:19 1607789959,,ui,message,    amazon-ebs: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+2020/12/12 16:19:20 1607789960,,ui,message,    amazon-ebs: --------------------------------------------------------------------------------
+2020/12/12 16:19:20 1607789960,,ui,message,    amazon-ebs: Total                                               70 MB/s |  88 MB  00:01
+2020/12/12 16:19:20 1607789960,,ui,message,    amazon-ebs: Running transaction check
+2020/12/12 16:19:21 1607789961,,ui,message,    amazon-ebs: Running transaction test
+2020/12/12 16:19:21 1607789961,,ui,message,    amazon-ebs: Transaction test succeeded
+2020/12/12 16:19:21 1607789961,,ui,message,    amazon-ebs: Running transaction
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : bash-4.2.46-34.amzn2.x86_64                                1/127
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : glibc-minimal-langpack-2.26-39.amzn2.x86_64                2/127
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : glibc-2.26-39.amzn2.x86_64                                 3/127
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : glibc-common-2.26-39.amzn2.x86_64                          4/127
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : libcom_err-1.42.9-19.amzn2.x86_64                          5/127
+2020/12/12 16:19:22 1607789962,,ui,message,    amazon-ebs:   Updating   : nspr-4.25.0-2.amzn2.x86_64                                 6/127
+2020/12/12 16:19:23 1607789963,,ui,message,    amazon-ebs:   Updating   : nss-util-3.53.1-1.amzn2.x86_64                             7/127
+2020/12/12 16:19:23 1607789963,,ui,message,    amazon-ebs:   Updating   : libxml2-2.9.1-6.amzn2.5.1.x86_64                           8/127
+2020/12/12 16:19:23 1607789963,,ui,message,    amazon-ebs:   Updating   : libgcc-7.3.1-11.amzn2.x86_64                               9/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : libstdc++-7.3.1-11.amzn2.x86_64                           10/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : python2-botocore-1.18.6-1.amzn2.0.1.noarch                11/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : 32:bind-license-9.11.4-26.P2.amzn2.2.noarch               12/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : 32:bind-libs-lite-9.11.4-26.P2.amzn2.2.x86_64             13/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : 32:bind-libs-9.11.4-26.P2.amzn2.2.x86_64                  14/127
+2020/12/12 16:19:24 1607789964,,ui,message,    amazon-ebs:   Updating   : python2-s3transfer-0.3.3-1.amzn2.0.1.noarch               15/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : libtiff-4.0.3-35.amzn2.x86_64                             16/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : glib2-2.56.1-7.amzn2.0.1.x86_64                           17/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : nss-softokn-freebl-3.53.1-6.amzn2.x86_64                  18/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : nss-softokn-3.53.1-6.amzn2.x86_64                         19/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : nss-sysinit-3.53.1-3.amzn2.x86_64                         20/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : nss-3.53.1-3.amzn2.x86_64                                 21/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : rpm-libs-4.11.3-40.amzn2.0.5.x86_64                       22/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : rpm-4.11.3-40.amzn2.0.5.x86_64                            23/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : rpm-build-libs-4.11.3-40.amzn2.0.5.x86_64                 24/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : nss-tools-3.53.1-3.amzn2.x86_64                           25/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : libss-1.42.9-19.amzn2.x86_64                              26/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : e2fsprogs-libs-1.42.9-19.amzn2.x86_64                     27/127
+2020/12/12 16:19:25 1607789965,,ui,message,    amazon-ebs:   Updating   : 2:libpng-1.5.13-8.amzn2.x86_64                            28/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : freetype-2.8-14.amzn2.1.x86_64                            29/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : p11-kit-0.23.21-2.amzn2.0.1.x86_64                        30/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : iptables-libs-1.8.4-10.amzn2.1.2.x86_64                   31/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : libcrypt-2.26-39.amzn2.x86_64                             32/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : 1:system-release-2-13.amzn2.x86_64                        33/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : amazon-linux-extras-1.6.13-1.amzn2.noarch                 34/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : amazon-linux-extras-yum-plugin-1.6.13-1.amzn2.noarch      35/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : pam-1.1.8-23.amzn2.0.1.x86_64                             36/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : iptables-1.8.4-10.amzn2.1.2.x86_64                        37/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : p11-kit-trust-0.23.21-2.amzn2.0.1.x86_64                  38/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : python-pillow-2.0.0-21.gitd1c6db8.amzn2.0.1.x86_64        39/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : e2fsprogs-1.42.9-19.amzn2.x86_64                          40/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : openldap-2.4.44-22.amzn2.x86_64                           41/127
+2020/12/12 16:19:26 1607789966,,ui,message,    amazon-ebs:   Updating   : python2-rpm-4.11.3-40.amzn2.0.5.x86_64                    42/127
+2020/12/12 16:19:27 1607789967,,ui,message,    amazon-ebs:   Updating   : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.5.x86_64     43/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : libcroco-0.6.12-6.amzn2.x86_64                            44/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : awscli-1.18.147-1.amzn2.0.1.noarch                        45/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : 32:bind-utils-9.11.4-26.P2.amzn2.2.x86_64                 46/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : hunspell-1.3.2-16.amzn2.x86_64                            47/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                      48/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : libxml2-python-2.9.1-6.amzn2.5.1.x86_64                   49/127
+2020/12/12 16:19:28 1607789968,,ui,message,    amazon-ebs:   Updating   : rng-tools-6.8-3.amzn2.0.4.x86_64                          50/127
+2020/12/12 16:19:29 1607789969,,ui,message,    amazon-ebs:   Updating   : 32:bind-export-libs-9.11.4-26.P2.amzn2.2.x86_64           51/127
+2020/12/12 16:19:31 1607789971,,ui,message,    amazon-ebs:   Updating   : glibc-locale-source-2.26-39.amzn2.x86_64                  52/127
+2020/12/12 16:19:31 1607789971,,ui,message,    amazon-ebs:   Updating   : glibc-all-langpacks-2.26-39.amzn2.x86_64                  53/127
+2020/12/12 16:19:31 1607789971,,ui,message,    amazon-ebs: ec2-instance-connect:x:998:996::/home/ec2-instance-connect:/sbin/nologin
+2020/12/12 16:19:32 1607789972,,ui,message,    amazon-ebs:   Updating   : ec2-instance-connect-1.1-13.amzn2.noarch                  54/127
+2020/12/12 16:19:32 1607789972,,ui,message,    amazon-ebs: Warning: ec2-instance-connect.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+2020/12/12 16:19:32 1607789972,,ui,message,    amazon-ebs:   Updating   : libgomp-7.3.1-11.amzn2.x86_64                             55/127
+2020/12/12 16:19:32 1607789972,,ui,message,    amazon-ebs:   Updating   : cpio-2.11-28.amzn2.x86_64                                 56/127
+2020/12/12 16:19:32 1607789972,,ui,message,    amazon-ebs:   Updating   : expat-2.1.0-12.amzn2.x86_64                               57/127
+2020/12/12 16:19:36 1607789976,,ui,message,    amazon-ebs:   Updating   : unzip-6.0-21.amzn2.x86_64                                 58/127
+2020/12/12 16:19:36 1607789976,,ui,message,    amazon-ebs:   Updating   : amazon-ssm-agent-3.0.161.0-1.amzn2.x86_64                 59/127
+2020/12/12 16:19:39 1607789979,,ui,message,    amazon-ebs:   Updating   : libssh2-1.4.3-12.amzn2.2.3.x86_64                         60/127
+2020/12/12 16:19:39 1607789979,,ui,message,    amazon-ebs:   Installing : kernel-4.14.209-160.335.amzn2.x86_64                      61/127
+2020/12/12 16:19:39 1607789979,,ui,message,    amazon-ebs:   Updating   : aws-cfn-bootstrap-1.4-34.amzn2.noarch                     62/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Updating   : ec2-net-utils-1.4-3.amzn2.noarch                          63/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Updating   : ec2-utils-1.2-3.amzn2.noarch                              64/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : openldap-2.4.44-15.amzn2.x86_64                           65/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : 32:bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64                66/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : 32:bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64                 67/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-tools-3.44.0-7.amzn2.x86_64                           68/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : python2-rpm-4.11.3-40.amzn2.0.4.x86_64                    69/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64            70/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : iptables-1.8.2-16.amzn2.0.2.x86_64                        71/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : e2fsprogs-1.42.9-12.amzn2.0.2.x86_64                      72/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : p11-kit-trust-0.23.19-1.amzn2.x86_64                      73/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : python-pillow-2.0.0-20.gitd1c6db8.amzn2.0.1.x86_64        74/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : libtiff-4.0.3-32.amzn2.x86_64                             75/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : rpm-build-libs-4.11.3-40.amzn2.0.4.x86_64                 76/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.4.x86_64     77/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : rpm-libs-4.11.3-40.amzn2.0.4.x86_64                       78/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : rpm-4.11.3-40.amzn2.0.4.x86_64                            79/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-sysinit-3.44.0-7.amzn2.x86_64                         80/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-3.44.0-7.amzn2.x86_64                                 81/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-softokn-3.44.0-8.amzn2.x86_64                         82/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-softokn-freebl-3.44.0-8.amzn2.x86_64                  83/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : nss-util-3.44.0-4.amzn2.x86_64                            84/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : hunspell-1.3.2-15.amzn2.0.2.x86_64                        85/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : freetype-2.8-14.amzn2.x86_64                              86/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : pam-1.1.8-22.amzn2.x86_64                                 87/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : libcroco-0.6.11-1.amzn2.0.2.x86_64                        88/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : ec2-instance-connect-1.1-12.amzn2.noarch                  89/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : awscli-1.18.107-1.amzn2.0.1.noarch                        90/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : glibc-all-langpacks-2.26-35.amzn2.x86_64                  91/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : glibc-locale-source-2.26-35.amzn2.x86_64                  92/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : glib2-2.56.1-5.amzn2.0.1.x86_64                           93/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : e2fsprogs-libs-1.42.9-12.amzn2.0.2.x86_64                 94/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : libss-1.42.9-12.amzn2.0.2.x86_64                          95/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : 1:mariadb-libs-5.5.64-1.amzn2.x86_64                      96/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : libstdc++-7.3.1-9.amzn2.x86_64                            97/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64          98/127
+2020/12/12 16:19:40 1607789980,,ui,message,    amazon-ebs:   Cleanup    : libxml2-python-2.9.1-6.amzn2.4.1.x86_64                   99/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libcrypt-2.26-35.amzn2.x86_64                            100/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : amazon-ssm-agent-2.3.1319.0-1.amzn2.x86_64               101/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : unzip-6.0-20.amzn2.x86_64                                102/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : rng-tools-5-13.amzn2.x86_64                              103/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : cpio-2.11-27.amzn2.x86_64                                104/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libgomp-7.3.1-9.amzn2.x86_64                             105/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : python2-s3transfer-0.1.12-1.amzn2.0.1.noarch             106/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : ec2-utils-1.2-1.amzn2.noarch                             107/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : ec2-net-utils-1.4-2.amzn2.noarch                         108/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : amazon-linux-extras-yum-plugin-1.6.12-1.amzn2.noarch     109/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : amazon-linux-extras-1.6.12-1.amzn2.noarch                110/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : 1:system-release-2-12.amzn2.x86_64                       111/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : aws-cfn-bootstrap-1.4-32.amzn2.0.1.noarch                112/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libxml2-2.9.1-6.amzn2.4.1.x86_64                         113/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libcom_err-1.42.9-12.amzn2.0.2.x86_64                    114/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libgcc-7.3.1-9.amzn2.x86_64                              115/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : 2:libpng-1.5.13-7.amzn2.0.2.x86_64                       116/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : nspr-4.21.0-1.amzn2.0.2.x86_64                           117/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : p11-kit-0.23.19-1.amzn2.x86_64                           118/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : iptables-libs-1.8.2-16.amzn2.0.2.x86_64                  119/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : libssh2-1.4.3-12.amzn2.2.2.x86_64                        120/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : expat-2.1.0-10.amzn2.0.2.x86_64                          121/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : python2-botocore-1.17.31-1.amzn2.0.1.noarch              122/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : 32:bind-license-9.11.4-9.P2.amzn2.0.4.noarch             123/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : glibc-common-2.26-35.amzn2.x86_64                        124/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : bash-4.2.46-33.amzn2.x86_64                              125/127
+2020/12/12 16:19:41 1607789981,,ui,message,    amazon-ebs:   Cleanup    : glibc-minimal-langpack-2.26-35.amzn2.x86_64              126/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Cleanup    : glibc-2.26-35.amzn2.x86_64                               127/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : kernel-4.14.209-160.335.amzn2.x86_64                       1/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : amazon-linux-extras-1.6.13-1.amzn2.noarch                  2/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 2:libpng-1.5.13-8.amzn2.x86_64                             3/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libgomp-7.3.1-11.amzn2.x86_64                              4/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libcroco-0.6.12-6.amzn2.x86_64                             5/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : cpio-2.11-28.amzn2.x86_64                                  6/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 32:bind-utils-9.11.4-26.P2.amzn2.2.x86_64                  7/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : glibc-locale-source-2.26-39.amzn2.x86_64                   8/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libxml2-2.9.1-6.amzn2.5.1.x86_64                           9/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libss-1.42.9-19.amzn2.x86_64                              10/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : expat-2.1.0-12.amzn2.x86_64                               11/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : rpm-4.11.3-40.amzn2.0.5.x86_64                            12/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : p11-kit-trust-0.23.21-2.amzn2.0.1.x86_64                  13/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 32:bind-license-9.11.4-26.P2.amzn2.2.noarch               14/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : nss-util-3.53.1-1.amzn2.x86_64                            15/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : p11-kit-0.23.21-2.amzn2.0.1.x86_64                        16/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : glibc-all-langpacks-2.26-39.amzn2.x86_64                  17/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libxml2-python-2.9.1-6.amzn2.5.1.x86_64                   18/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 32:bind-libs-lite-9.11.4-26.P2.amzn2.2.x86_64             19/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : e2fsprogs-libs-1.42.9-19.amzn2.x86_64                     20/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : iptables-libs-1.8.4-10.amzn2.1.2.x86_64                   21/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libgcc-7.3.1-11.amzn2.x86_64                              22/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : python2-botocore-1.18.6-1.amzn2.0.1.noarch                23/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : nss-softokn-freebl-3.53.1-6.amzn2.x86_64                  24/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : e2fsprogs-1.42.9-19.amzn2.x86_64                          25/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : nss-tools-3.53.1-3.amzn2.x86_64                           26/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libstdc++-7.3.1-11.amzn2.x86_64                           27/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 1:system-release-2-13.amzn2.x86_64                        28/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 32:bind-export-libs-9.11.4-26.P2.amzn2.2.x86_64           29/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : hunspell-1.3.2-16.amzn2.x86_64                            30/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                      31/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : aws-cfn-bootstrap-1.4-34.amzn2.noarch                     32/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : glibc-common-2.26-39.amzn2.x86_64                         33/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : amazon-linux-extras-yum-plugin-1.6.13-1.amzn2.noarch      34/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : bash-4.2.46-34.amzn2.x86_64                               35/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : python2-s3transfer-0.3.3-1.amzn2.0.1.noarch               36/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : libcrypt-2.26-39.amzn2.x86_64                             37/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : rpm-libs-4.11.3-40.amzn2.0.5.x86_64                       38/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : pam-1.1.8-23.amzn2.0.1.x86_64                             39/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : glibc-minimal-langpack-2.26-39.amzn2.x86_64               40/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : python-pillow-2.0.0-21.gitd1c6db8.amzn2.0.1.x86_64        41/127
+2020/12/12 16:20:05 1607790005,,ui,message,    amazon-ebs:   Verifying  : ec2-net-utils-1.4-3.amzn2.noarch                          42/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rng-tools-6.8-3.amzn2.0.4.x86_64                          43/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : awscli-1.18.147-1.amzn2.0.1.noarch                        44/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : unzip-6.0-21.amzn2.x86_64                                 45/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : freetype-2.8-14.amzn2.1.x86_64                            46/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glib2-2.56.1-7.amzn2.0.1.x86_64                           47/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : iptables-1.8.4-10.amzn2.1.2.x86_64                        48/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-softokn-3.53.1-6.amzn2.x86_64                         49/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.5.x86_64     50/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : python2-rpm-4.11.3-40.amzn2.0.5.x86_64                    51/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-2.26-39.amzn2.x86_64                                52/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libcom_err-1.42.9-19.amzn2.x86_64                         53/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : ec2-utils-1.2-3.amzn2.noarch                              54/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : amazon-ssm-agent-3.0.161.0-1.amzn2.x86_64                 55/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libtiff-4.0.3-35.amzn2.x86_64                             56/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : ec2-instance-connect-1.1-13.amzn2.noarch                  57/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-sysinit-3.53.1-3.amzn2.x86_64                         58/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libssh2-1.4.3-12.amzn2.2.3.x86_64                         59/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-libs-9.11.4-26.P2.amzn2.2.x86_64                  60/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nspr-4.25.0-2.amzn2.x86_64                                61/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-3.53.1-3.amzn2.x86_64                                 62/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-build-libs-4.11.3-40.amzn2.0.5.x86_64                 63/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : openldap-2.4.44-22.amzn2.x86_64                           64/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-locale-source-2.26-35.amzn2.x86_64                  65/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glib2-2.56.1-5.amzn2.0.1.x86_64                           66/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : ec2-instance-connect-1.1-12.amzn2.noarch                  67/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-4.11.3-40.amzn2.0.4.x86_64                            68/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 2:libpng-1.5.13-7.amzn2.0.2.x86_64                        69/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : hunspell-1.3.2-15.amzn2.0.2.x86_64                        70/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-build-libs-4.11.3-40.amzn2.0.4.x86_64                 71/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 1:system-release-2-12.amzn2.x86_64                        72/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : cpio-2.11-27.amzn2.x86_64                                 73/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64                 74/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libxml2-python-2.9.1-6.amzn2.4.1.x86_64                   75/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-2.26-35.amzn2.x86_64                                76/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-3.44.0-7.amzn2.x86_64                                 77/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libcom_err-1.42.9-12.amzn2.0.2.x86_64                     78/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libstdc++-7.3.1-9.amzn2.x86_64                            79/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-all-langpacks-2.26-35.amzn2.x86_64                  80/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64                81/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : pam-1.1.8-22.amzn2.x86_64                                 82/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : e2fsprogs-1.42.9-12.amzn2.0.2.x86_64                      83/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : aws-cfn-bootstrap-1.4-32.amzn2.0.1.noarch                 84/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-softokn-freebl-3.44.0-8.amzn2.x86_64                  85/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libxml2-2.9.1-6.amzn2.4.1.x86_64                          86/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64          87/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : openldap-2.4.44-15.amzn2.x86_64                           88/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : p11-kit-trust-0.23.19-1.amzn2.x86_64                      89/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : unzip-6.0-20.amzn2.x86_64                                 90/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : p11-kit-0.23.19-1.amzn2.x86_64                            91/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nspr-4.21.0-1.amzn2.0.2.x86_64                            92/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : freetype-2.8-14.amzn2.x86_64                              93/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64            94/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : e2fsprogs-libs-1.42.9-12.amzn2.0.2.x86_64                 95/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libss-1.42.9-12.amzn2.0.2.x86_64                          96/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libssh2-1.4.3-12.amzn2.2.2.x86_64                         97/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-libs-4.11.3-40.amzn2.0.4.x86_64                       98/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 1:mariadb-libs-5.5.64-1.amzn2.x86_64                      99/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-sysinit-3.44.0-7.amzn2.x86_64                        100/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-minimal-langpack-2.26-35.amzn2.x86_64              101/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rng-tools-5-13.amzn2.x86_64                              102/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : iptables-libs-1.8.2-16.amzn2.0.2.x86_64                  103/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libcrypt-2.26-35.amzn2.x86_64                            104/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : amazon-linux-extras-1.6.12-1.amzn2.noarch                105/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : 32:bind-license-9.11.4-9.P2.amzn2.0.4.noarch             106/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-tools-3.44.0-7.amzn2.x86_64                          107/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : amazon-linux-extras-yum-plugin-1.6.12-1.amzn2.noarch     108/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : iptables-1.8.2-16.amzn2.0.2.x86_64                       109/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libgcc-7.3.1-9.amzn2.x86_64                              110/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libtiff-4.0.3-32.amzn2.x86_64                            111/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-softokn-3.44.0-8.amzn2.x86_64                        112/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : expat-2.1.0-10.amzn2.0.2.x86_64                          113/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : ec2-net-utils-1.4-2.amzn2.noarch                         114/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libgomp-7.3.1-9.amzn2.x86_64                             115/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : awscli-1.18.107-1.amzn2.0.1.noarch                       116/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : nss-util-3.44.0-4.amzn2.x86_64                           117/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : bash-4.2.46-33.amzn2.x86_64                              118/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : python-pillow-2.0.0-20.gitd1c6db8.amzn2.0.1.x86_64       119/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : amazon-ssm-agent-2.3.1319.0-1.amzn2.x86_64               120/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : libcroco-0.6.11-1.amzn2.0.2.x86_64                       121/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : glibc-common-2.26-35.amzn2.x86_64                        122/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : python2-s3transfer-0.1.12-1.amzn2.0.1.noarch             123/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.4.x86_64    124/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : python2-botocore-1.17.31-1.amzn2.0.1.noarch              125/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : python2-rpm-4.11.3-40.amzn2.0.4.x86_64                   126/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   Verifying  : ec2-utils-1.2-1.amzn2.noarch                             127/127
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs: Installed:
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   kernel.x86_64 0:4.14.209-160.335.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs: Updated:
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   amazon-linux-extras.noarch 0:1.6.13-1.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   amazon-linux-extras-yum-plugin.noarch 0:1.6.13-1.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   amazon-ssm-agent.x86_64 0:3.0.161.0-1.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   aws-cfn-bootstrap.noarch 0:1.4-34.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   awscli.noarch 0:1.18.147-1.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bash.x86_64 0:4.2.46-34.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bind-export-libs.x86_64 32:9.11.4-26.P2.amzn2.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bind-libs.x86_64 32:9.11.4-26.P2.amzn2.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bind-libs-lite.x86_64 32:9.11.4-26.P2.amzn2.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bind-license.noarch 32:9.11.4-26.P2.amzn2.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   bind-utils.x86_64 32:9.11.4-26.P2.amzn2.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   cpio.x86_64 0:2.11-28.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   e2fsprogs.x86_64 0:1.42.9-19.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   e2fsprogs-libs.x86_64 0:1.42.9-19.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   ec2-instance-connect.noarch 0:1.1-13.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   ec2-net-utils.noarch 0:1.4-3.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   ec2-utils.noarch 0:1.2-3.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   expat.x86_64 0:2.1.0-12.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   freetype.x86_64 0:2.8-14.amzn2.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glib2.x86_64 0:2.56.1-7.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glibc.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glibc-all-langpacks.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glibc-common.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glibc-locale-source.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   glibc-minimal-langpack.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   hunspell.x86_64 0:1.3.2-16.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   iptables.x86_64 0:1.8.4-10.amzn2.1.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   iptables-libs.x86_64 0:1.8.4-10.amzn2.1.2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libcom_err.x86_64 0:1.42.9-19.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libcroco.x86_64 0:0.6.12-6.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libcrypt.x86_64 0:2.26-39.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libgcc.x86_64 0:7.3.1-11.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libgomp.x86_64 0:7.3.1-11.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libpng.x86_64 2:1.5.13-8.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libss.x86_64 0:1.42.9-19.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libssh2.x86_64 0:1.4.3-12.amzn2.2.3
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libstdc++.x86_64 0:7.3.1-11.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libtiff.x86_64 0:4.0.3-35.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libxml2.x86_64 0:2.9.1-6.amzn2.5.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   libxml2-python.x86_64 0:2.9.1-6.amzn2.5.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   mariadb-libs.x86_64 1:5.5.68-1.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nspr.x86_64 0:4.25.0-2.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss.x86_64 0:3.53.1-3.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss-softokn.x86_64 0:3.53.1-6.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss-softokn-freebl.x86_64 0:3.53.1-6.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss-sysinit.x86_64 0:3.53.1-3.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss-tools.x86_64 0:3.53.1-3.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   nss-util.x86_64 0:3.53.1-1.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   openldap.x86_64 0:2.4.44-22.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   p11-kit.x86_64 0:0.23.21-2.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   p11-kit-trust.x86_64 0:0.23.21-2.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   pam.x86_64 0:1.1.8-23.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   python-pillow.x86_64 0:2.0.0-21.gitd1c6db8.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   python2-botocore.noarch 0:1.18.6-1.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   python2-rpm.x86_64 0:4.11.3-40.amzn2.0.5
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   python2-s3transfer.noarch 0:0.3.3-1.amzn2.0.1
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   rng-tools.x86_64 0:6.8-3.amzn2.0.4
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   rpm.x86_64 0:4.11.3-40.amzn2.0.5
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   rpm-build-libs.x86_64 0:4.11.3-40.amzn2.0.5
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   rpm-libs.x86_64 0:4.11.3-40.amzn2.0.5
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   rpm-plugin-systemd-inhibit.x86_64 0:4.11.3-40.amzn2.0.5
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   system-release.x86_64 1:2-13.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:   unzip.x86_64 0:6.0-21.amzn2
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs:
+2020/12/12 16:20:06 1607790006,,ui,message,    amazon-ebs: Complete!
+2020/12/12 16:20:07 1607790007,,ui,message,    amazon-ebs: Loaded plugins: extras_suggestions%!(PACKER_COMMA) langpacks%!(PACKER_COMMA) priorities%!(PACKER_COMMA) update-motd
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs: Existing lock /var/run/yum.pid: another copy is running as pid 12727.
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs:   The other application is: yum
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs:     Memory :  59 M RSS (349 MB VSZ)
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs:     Started: Sat Dec 12 16:20:04 2020 - 00:02 ago
+2020/12/12 16:20:07 1607790007,,ui,error,==> amazon-ebs:     State  : Sleeping%!(PACKER_COMMA) pid: 12727
+2020/12/12 16:20:09 1607790009,,ui,error,==> amazon-ebs: Another app is currently holding the yum lock; waiting for it to exit...
+2020/12/12 16:20:09 1607790009,,ui,error,==> amazon-ebs:   The other application is: yum
+2020/12/12 16:20:09 1607790009,,ui,error,==> amazon-ebs:     Memory : 135 M RSS (425 MB VSZ)
+2020/12/12 16:20:09 1607790009,,ui,error,==> amazon-ebs:     Started: Sat Dec 12 16:20:04 2020 - 00:04 ago
+2020/12/12 16:20:09 1607790009,,ui,error,==> amazon-ebs:     State  : Running%!(PACKER_COMMA) pid: 12727
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: Resolving Dependencies
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Running transaction check
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: ---> Package docker.x86_64 0:19.03.13ce-1.amzn2 will be installed
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Processing Dependency: runc >= 1.0.0 for package: docker-19.03.13ce-1.amzn2.x86_64
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Processing Dependency: containerd >= 1.3.2 for package: docker-19.03.13ce-1.amzn2.x86_64
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Processing Dependency: pigz for package: docker-19.03.13ce-1.amzn2.x86_64
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Processing Dependency: libcgroup for package: docker-19.03.13ce-1.amzn2.x86_64
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: --> Running transaction check
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: ---> Package containerd.x86_64 0:1.4.1-2.amzn2 will be installed
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: ---> Package libcgroup.x86_64 0:0.41-21.amzn2 will be installed
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: ---> Package pigz.x86_64 0:2.3.4-1.amzn2.0.1 will be installed
+2020/12/12 16:20:11 1607790011,,ui,message,    amazon-ebs: ---> Package runc.x86_64 0:1.0.0-0.1.20200826.gitff819c7.amzn2 will be installed
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: --> Finished Dependency Resolution
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Dependencies Resolved
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  Package    Arch   Version                              Repository         Size
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Installing:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  docker     x86_64 19.03.13ce-1.amzn2                   amzn2extra-docker  37 M
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Installing for dependencies:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  containerd x86_64 1.4.1-2.amzn2                        amzn2extra-docker  24 M
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  libcgroup  x86_64 0.41-21.amzn2                        amzn2-core         66 k
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  pigz       x86_64 2.3.4-1.amzn2.0.1                    amzn2-core         81 k
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:  runc       x86_64 1.0.0-0.1.20200826.gitff819c7.amzn2  amzn2extra-docker 3.7 M
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Transaction Summary
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Install  1 Package (+4 Dependent packages)
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Total download size: 65 M
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Installed size: 270 M
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Downloading packages:
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: --------------------------------------------------------------------------------
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Total                                               89 MB/s |  65 MB  00:00
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Running transaction check
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Running transaction test
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Transaction test succeeded
+2020/12/12 16:20:12 1607790012,,ui,message,    amazon-ebs: Running transaction
+2020/12/12 16:20:16 1607790016,,ui,message,    amazon-ebs:   Installing : runc-1.0.0-0.1.20200826.gitff819c7.amzn2.x86_64              1/5
+2020/12/12 16:20:16 1607790016,,ui,message,    amazon-ebs:   Installing : containerd-1.4.1-2.amzn2.x86_64                              2/5
+2020/12/12 16:20:16 1607790016,,ui,message,    amazon-ebs:   Installing : pigz-2.3.4-1.amzn2.0.1.x86_64                                3/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Installing : libcgroup-0.41-21.amzn2.x86_64                               4/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Installing : docker-19.03.13ce-1.amzn2.x86_64                             5/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Verifying  : docker-19.03.13ce-1.amzn2.x86_64                             1/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Verifying  : libcgroup-0.41-21.amzn2.x86_64                               2/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Verifying  : pigz-2.3.4-1.amzn2.0.1.x86_64                                3/5
+2020/12/12 16:20:22 1607790022,,ui,message,    amazon-ebs:   Verifying  : containerd-1.4.1-2.amzn2.x86_64                              4/5
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   Verifying  : runc-1.0.0-0.1.20200826.gitff819c7.amzn2.x86_64              5/5
+2020/12/12 16:20:23 1607790023,,ui,error,==> amazon-ebs: Redirecting to /bin/systemctl start docker.service
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs: Installed:
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   docker.x86_64 0:19.03.13ce-1.amzn2
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs: Dependency Installed:
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   containerd.x86_64 0:1.4.1-2.amzn2
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   libcgroup.x86_64 0:0.41-21.amzn2
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   pigz.x86_64 0:2.3.4-1.amzn2.0.1
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:   runc.x86_64 0:1.0.0-0.1.20200826.gitff819c7.amzn2
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs:
+2020/12/12 16:20:23 1607790023,,ui,message,    amazon-ebs: Complete!
+2020/12/12 16:20:24 1607790024,,ui,error,==> amazon-ebs: Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
+2020/12/12 16:20:24 1607790024,,ui,error,==> amazon-ebs: Unable to find image 'prom/node-exporter:latest' locally
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: latest: Pulling from prom/node-exporter
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: 86fa074c6765: Pulling fs layer
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: ed1cd1c6cd7a: Pulling fs layer
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: ff1bb132ce7b: Pulling fs layer
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: 86fa074c6765: Verifying Checksum
+2020/12/12 16:20:25 1607790025,,ui,error,==> amazon-ebs: 86fa074c6765: Download complete
+2020/12/12 16:20:26 1607790026,,ui,error,==> amazon-ebs: ed1cd1c6cd7a: Verifying Checksum
+2020/12/12 16:20:26 1607790026,,ui,error,==> amazon-ebs: ed1cd1c6cd7a: Download complete
+2020/12/12 16:20:26 1607790026,,ui,error,==> amazon-ebs: ff1bb132ce7b: Verifying Checksum
+2020/12/12 16:20:26 1607790026,,ui,error,==> amazon-ebs: ff1bb132ce7b: Download complete
+2020/12/12 16:20:26 1607790026,,ui,error,==> amazon-ebs: 86fa074c6765: Pull complete
+2020/12/12 16:20:27 1607790027,,ui,error,==> amazon-ebs: ed1cd1c6cd7a: Pull complete
+2020/12/12 16:20:27 1607790027,,ui,error,==> amazon-ebs: ff1bb132ce7b: Pull complete
+2020/12/12 16:20:27 1607790027,,ui,error,==> amazon-ebs: Digest: sha256:cf66a6bbd573fd819ea09c72e21b528e9252d58d01ae13564a29749de1e48e0f
+2020/12/12 16:20:27 1607790027,,ui,error,==> amazon-ebs: Status: Downloaded newer image for prom/node-exporter:latest
+2020/12/12 16:20:28 1607790028,,ui,message,    amazon-ebs: 5b088c47905e1fa9ab7fc504bd5b78772b57f84c026159a75bcc095ef8f3ef9f
+2020/12/12 16:20:29 1607790029,,ui,message,    amazon-ebs: Using default tag: latest
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: latest: Pulling from library/redis
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 6ec7b7d162b2: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 1f81a70aa4c8: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 968aa38ff012: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 884c313d5b0b: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 6e858785fea5: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 78bcc34f027b: Pulling fs layer
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 884c313d5b0b: Waiting
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 6e858785fea5: Waiting
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 78bcc34f027b: Waiting
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 1f81a70aa4c8: Verifying Checksum
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 1f81a70aa4c8: Download complete
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 968aa38ff012: Verifying Checksum
+2020/12/12 16:20:30 1607790030,,ui,message,    amazon-ebs: 968aa38ff012: Download complete
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 6ec7b7d162b2: Verifying Checksum
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 6ec7b7d162b2: Download complete
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 6e858785fea5: Verifying Checksum
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 6e858785fea5: Download complete
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 884c313d5b0b: Verifying Checksum
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 884c313d5b0b: Download complete
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 78bcc34f027b: Verifying Checksum
+2020/12/12 16:20:31 1607790031,,ui,message,    amazon-ebs: 78bcc34f027b: Download complete
+2020/12/12 16:20:32 1607790032,,ui,message,    amazon-ebs: 6ec7b7d162b2: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: 1f81a70aa4c8: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: 968aa38ff012: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: 884c313d5b0b: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: 6e858785fea5: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: 78bcc34f027b: Pull complete
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: Digest: sha256:0f724af268d0d3f5fb1d6b33fc22127ba5cbca2d58523b286ed3122db0dc5381
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: Status: Downloaded newer image for redis:latest
+2020/12/12 16:20:33 1607790033,,ui,message,    amazon-ebs: docker.io/library/redis:latest
+2020/12/12 16:20:34 1607790034,,ui,message,    amazon-ebs: Loaded plugins: extras_suggestions%!(PACKER_COMMA) langpacks%!(PACKER_COMMA) priorities%!(PACKER_COMMA) update-motd
+2020/12/12 16:20:34 1607790034,,ui,message,    amazon-ebs: Resolving Dependencies
+2020/12/12 16:20:34 1607790034,,ui,message,    amazon-ebs: --> Running transaction check
+2020/12/12 16:20:34 1607790034,,ui,message,    amazon-ebs: ---> Package python2-pip.noarch 0:9.0.3-1.amzn2.0.2 will be installed
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: --> Finished Dependency Resolution
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Dependencies Resolved
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:  Package           Arch         Version                  Repository        Size
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Installing:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:  python2-pip       noarch       9.0.3-1.amzn2.0.2        amzn2-core       1.9 M
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Transaction Summary
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: ================================================================================
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Install  1 Package
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Total download size: 1.9 M
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Installed size: 8.3 M
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Downloading packages:
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Running transaction check
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Running transaction test
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Transaction test succeeded
+2020/12/12 16:20:35 1607790035,,ui,message,    amazon-ebs: Running transaction
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs:   Installing : python2-pip-9.0.3-1.amzn2.0.2.noarch                         1/1
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs:   Verifying  : python2-pip-9.0.3-1.amzn2.0.2.noarch                         1/1
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs:
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs: Installed:
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs:   python2-pip.noarch 0:9.0.3-1.amzn2.0.2
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs:
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs: Complete!
+2020/12/12 16:20:36 1607790036,,ui,error,==> amazon-ebs: WARNING: Running pip install with root privileges is generally not a good idea. Try `pip install --user` instead.
+2020/12/12 16:20:36 1607790036,,ui,message,    amazon-ebs: Collecting docker-py
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs:   Downloading https://files.pythonhosted.org/packages/23/c7/1fd6d4d620809fe2f323869d719e2dd0086c939b67021303a9ec40f5a05b/docker_py-1.10.6-py2.py3-none-any.whl (50kB)
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs: Requirement already satisfied: six>=1.4.0 in /usr/lib/python2.7/site-packages (from docker-py)
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs: Requirement already satisfied: backports.ssl-match-hostname>=3.5; python_version < "3.5" in /usr/lib/python2.7/site-packages (from docker-py)
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs: Requirement already satisfied: ipaddress>=1.0.16; python_version < "3.3" in /usr/lib/python2.7/site-packages (from docker-py)
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs: Collecting websocket-client>=0.32.0 (from docker-py)
+2020/12/12 16:20:37 1607790037,,ui,message,    amazon-ebs:   Downloading https://files.pythonhosted.org/packages/4c/5f/f61b420143ed1c8dc69f9eaec5ff1ac36109d52c80de49d66e0c36c3dfdf/websocket_client-0.57.0-py2.py3-none-any.whl (200kB)
+2020/12/12 16:20:38 1607790038,,ui,message,    amazon-ebs: Collecting docker-pycreds>=0.2.1 (from docker-py)
+2020/12/12 16:20:38 1607790038,,ui,message,    amazon-ebs:   Downloading https://files.pythonhosted.org/packages/f5/e8/f6bd1eee09314e7e6dee49cbe2c5e22314ccdb38db16c9fc72d2fa80d054/docker_pycreds-0.4.0-py2.py3-none-any.whl
+2020/12/12 16:20:38 1607790038,,ui,message,    amazon-ebs: Requirement already satisfied: requests!=2.11.0%!(PACKER_COMMA)>=2.5.2 in /usr/lib/python2.7/site-packages (from docker-py)
+2020/12/12 16:20:38 1607790038,,ui,message,    amazon-ebs: Installing collected packages: websocket-client%!(PACKER_COMMA) docker-pycreds%!(PACKER_COMMA) docker-py
+2020/12/12 16:20:38 1607790038,,ui,message,    amazon-ebs: Successfully installed docker-py-1.10.6 docker-pycreds-0.4.0 websocket-client-0.57.0
+2020/12/12 16:20:38 packer.exe plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:38 [INFO] 1709 bytes written for 'stderr'
+2020/12/12 16:20:38 [INFO] 47547 bytes written for 'stdout'
+2020/12/12 16:20:38 [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:38 [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:38 packer.exe plugin: [INFO] 1709 bytes written for 'stderr'
+2020/12/12 16:20:38 packer.exe plugin: [INFO] 47547 bytes written for 'stdout'
+2020/12/12 16:20:38 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:38 packer.exe plugin: [DEBUG] Opening new ssh session
+2020/12/12 16:20:39 packer.exe plugin: [DEBUG] starting remote command: rm -f /tmp/script_2596.sh
+2020/12/12 16:20:39 packer.exe plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:39 [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:39 [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:39 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:39 packer.exe plugin: [DEBUG] Opening new ssh session
+2020/12/12 16:20:39 packer.exe plugin: [DEBUG] starting remote command: rm -f
+2020/12/12 16:20:39 packer.exe plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:39 [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:39 [INFO] RPC endpoint: Communicator ended with: 0
+2020/12/12 16:20:39 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2020/12/12 16:20:39 [INFO] (telemetry) ending shell
+2020/12/12 16:20:39 1607790039,,ui,say,==> amazon-ebs: Stopping the source instance...
+2020/12/12 16:20:39 1607790039,,ui,message,    amazon-ebs: Stopping instance
+2020/12/12 16:20:39 1607790039,,ui,say,==> amazon-ebs: Waiting for the instance to stop...
+2020/12/12 16:21:27 1607790087,,ui,say,==> amazon-ebs: Creating AMI packer_app 1607789896 from instance i-054059a90120d16bf
+2020/12/12 16:21:27 1607790087,,ui,message,    amazon-ebs: AMI: ami-06786ccbe4abbfa4f
+2020/12/12 16:21:27 1607790087,,ui,say,==> amazon-ebs: Waiting for AMI to become ready...
+2020/12/12 16:24:33 1607790273,,ui,say,==> amazon-ebs: Terminating the source AWS instance...
+2020/12/12 16:24:49 1607790289,,ui,say,==> amazon-ebs: Cleaning up any extra volumes...
+2020/12/12 16:24:49 1607790289,,ui,say,==> amazon-ebs: No volumes to clean up%!(PACKER_COMMA) skipping
+2020/12/12 16:24:49 1607790289,,ui,say,==> amazon-ebs: Deleting temporary security group...
+2020/12/12 16:24:49 1607790289,,ui,say,==> amazon-ebs: Deleting temporary keypair...
+2020/12/12 16:24:50 [INFO] (telemetry) ending amazon-ebs
+2020/12/12 16:24:50 1607790290,,ui,say,Build 'amazon-ebs' finished after 6 minutes 32 seconds.
+2020/12/12 16:24:50 1607790290,,ui,say,\n==> Wait completed after 6 minutes 32 seconds
+2020/12/12 16:24:50 1607790290,,ui,say,\n==> Builds finished. The artifacts of successful builds are:
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact-count,1
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact,0,builder-id,mitchellh.amazonebs
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact,0,id,eu-west-1:ami-06786ccbe4abbfa4f
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact,0,string,AMIs were created:\neu-west-1: ami-06786ccbe4abbfa4f\n
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact,0,files-count,0
+2020/12/12 16:24:50 1607790290,amazon-ebs,artifact,0,end
+2020/12/12 16:24:50 1607790290,,ui,say,--> amazon-ebs: AMIs were created:\neu-west-1: ami-06786ccbe4abbfa4f\n
+2020/12/12 16:24:50 [INFO] (telemetry) Finalizing.
+2020/12/12 16:24:52 [WARN] (telemetry) Error finalizing report. This is safe to ignore. Post "https://checkpoint-api.hashicorp.com/v1/telemetry/packer": context deadline exceeded
+2020/12/12 16:24:52 waiting for all plugin processes to complete...
+2020/12/12 16:24:52 C:\Packer\packer.exe: plugin process exited
+2020/12/12 16:24:52 C:\Packer\packer.exe: plugin process exited
