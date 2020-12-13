@@ -1,6 +1,6 @@
 # Generate inventory file
 resource "local_file" "inventory" {
- filename = "./ansible_build/hosts.ini"
+ filename = "../ansible_build/hosts.ini"
  content = <<EOF
 [localhost]
 ${aws_instance.toolbox.public_ip}

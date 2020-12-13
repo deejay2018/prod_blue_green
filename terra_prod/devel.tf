@@ -108,7 +108,7 @@ resource "null_resource" "toolbox-provisioner" {
 
     # Copy the prometheus file to instance
   provisioner "file" {
-    source      = "./ansible_build"
+    source      = "../ansible_build"
     destination = "/tmp"
   }
 
